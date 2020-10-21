@@ -1,0 +1,449 @@
+body{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Changa', sans-serif;
+    background-color: red;
+}
+
+/*Nav CSS*/
+nav{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 200px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    color: white;
+    font-family: 'Changa', sans-serif;
+    z-index: 2;
+}
+nav h2{
+    color: white;
+    font-size: 38px;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    margin-left: 20px;
+}
+nav .nav-link{
+    width: 170px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    font-size: 18px;
+    margin-left: 8px;
+}
+
+/*Web-Content CSS*/
+.website-content{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+/*Hero CSS*/
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+.hero-image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    filter: blur(3.2px);
+}
+.hero-content{
+    margin-left: 150px;
+    margin-bottom: 200px;
+}
+.hero-content h1{
+    text-align: center;
+    color: white;
+    font-family: 'Changa', sans-serif;
+    font-size: 4.5vw;
+}
+.hero-content h3{
+    color: white;
+    font-family: 'Changa', sans-serif;
+    font-size: 1.5vw;
+}
+/*Resume-header CSS*/
+.resume-head{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+.resume-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 22.5vh;
+    background: #1f1f1f;
+}
+.name{
+    width: 50vw;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: row;
+}
+.name-image{
+    object-fit: cover;
+    width: 9vw;
+    height: 18vh;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-left: 220px;
+}
+.name-tag{
+    display: flex;
+    flex-direction: column;
+}
+.name h1{
+    color: white;
+    font-family: 'Changa', sans-serif;
+    font-size: 32px;
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+}
+.name p{
+    margin-left: 30px;
+    margin-top: 0px;
+    font-family: 'Changa', sans-serif;
+    font-size: 21px;
+    color: #41d2e8;
+}
+.info{
+    width: 40vw;
+    background-color: #1f1f1f;
+    border-left: #333333 1px solid;
+}
+.info ul{
+    list-style: none;
+    margin-top: 3.8vh;
+}
+.info p{
+    font-size: 21px;
+    font-family: 'Changa', sans-serif;
+}
+.red{color:#f7196a;}
+.yellow{color:#fcd860;}
+.green{color: #60fc8c;}
+.info span{
+    color: white;
+    font-size: 16px;
+    font-family: 'Changa', sans-serif;
+    margin-left: 5px;
+}
+.objective{
+    width: 100vw;
+    height: 13vh;
+    background-color: #1f1f1f;
+    border-top:  #333333 solid 1px;
+}
+.objective p{
+    color: lightgrey;
+    font-size: 17px;
+    width: 80vw;
+    margin-left: 220px;
+    margin-top: 20px;
+    font-family: 'Changa', sans-serif;
+    
+}
+
+/*Resume-body CSS*/
+.resume-body{
+    width: 100vw;
+    height: 53vh;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+}
+.work-experience{
+    width: 60vw;
+    height: auto;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+    border-top:  #333333 solid 1px;
+}
+.resume-body h1{
+    background-color: #2e2e2e;
+    border-radius: 16px;
+    width: 350px;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 35px;
+    font-family: 'Changa', sans-serif;
+    color: lightgrey;
+    font-size: 43px;
+}
+
+.resume-body .work-experience .veritas{
+    background-color: #1f1f1f;
+    width: 60vw;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+.veritas-img{
+    object-fit: cover;
+    width: 40px;
+    height: 60px;
+    margin-right: 10px;
+}
+.veritas h2{
+    color: white;
+    font-family: 'Changa', sans-serif;
+    font-size: 38px;
+    margin-left: 20px;
+}
+.veritas span{
+    color: darkgrey;
+    font-family: 'Changa', sans-serif;
+    font-size: 19px;
+    margin-left: 20px;
+    
+}
+.veritas .date{
+    color: #f7196a;
+    font-family: 'Changa', sans-serif;
+    font-size: 15px;
+    margin-left: 10px;
+    
+}
+.veritas h3{
+    color: white;
+    font-family: 'Changa', sans-serif;
+    font-size: 28px;
+    margin-top: 0px;
+    margin-left: 95px;
+}
+.veritas p{
+    color: white;
+    font-family: 'Changa', sans-serif;
+    font-size: 1vw;
+    margin-top: 0PX;
+    margin-bottom: 18PX;
+    margin-left: 18px;
+}
+.resume-body .pro-skills{
+    width: 40vw;
+    height: auto;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: column;
+}
+.pro-skills .pro-title{
+    background-color: #1f1f1f;
+    color: #41d2e8;
+}
+.pro-skills h2{
+    font-family: 'Changa', sans-serif;
+    margin-left: 30px;  
+}
+.pro-skills {border-left: #333333 solid 1px;border-top: #333333 solid 1px;
+}
+.pro-skills li{
+    list-style: none;
+    color: white;
+    font-family: 'Changa', sans-serif;
+    font-size: 24px;
+    margin-top: 2px;
+}
+.Education{
+    background-color: white;
+    width: 100vww;
+    height: auto;
+    background-color: #1f1f1f;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 200px;
+    border-top: #333333 solid 1px;
+
+}
+.Education h1{
+    background-color: #2e2e2e;
+    border-radius: 16px;
+    width: 210px;
+    text-align: center;
+    margin-left: 20px;
+    font-family: 'Changa', sans-serif;
+    color: lightgrey;
+    font-size: 33px;
+}
+.Education p{
+    color: white;
+    font-size: 18px;
+    font-family: 'Changa', sans-serif;
+    margin-left: 25px;
+}
+#status-edu{
+    color: #60fc8c;
+    font-size: 16px;
+    margin-left: 6px;
+}
+#uni-major{
+    color: darkgrey;
+    font-size: 16px;
+    margin-left: 6px;
+}
+.edu{
+    margin-top: 2vh;
+}
+.awards{
+    width: 60vw;
+    margin-top: 6vh;
+}
+
+@media all and (max-width: 950px){
+    body{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav{
+        height: 120px;
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .nav-link{margin-top: 30px;
+    }
+    nav h2{
+        margin-left: 25px; 
+        margin-top: 30px;
+    }
+
+    .hero{
+        height: 500px;
+    }
+    .hero-content{
+        margin-top: 300px;
+        margin-right: 140px;
+    }
+    .hero h1{
+        font-size: 6vw;
+    }
+    .hero h3{
+        font-size: 2.2vw;
+    }
+    .name-image{
+        margin-left: 20px;
+    }
+    .objective{height: 16.5vh;}
+    .objective p{
+        margin-left: 25px;
+    }
+    .resume-body{
+        flex-wrap: wrap;
+        margin-left: 0px;
+        height: 80vh;
+    }
+    .veritas p{
+        font-size: 17.5px;
+        margin-top: 15px;
+    }
+    .veritas h3{margin-left: 25px;}
+    .pro-skills li{
+        font-size: 22px;
+    }
+    .Education{margin-left: auto;}
+}
+@media all and (max-width:768px){
+    nav h2{
+        margin-left: 8px;
+    }
+    .resume-header{
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+    }
+    .name-image{
+        object-fit: cover;
+        width: 19vw;
+        height: 11vh;
+        margin-top: 20px;
+    }
+    .name{
+        width: 100vw;
+    }
+    .info{
+        width: 100vw;
+    }
+    .objective{height: auto;}
+    .resume-body{
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: auto;
+    }
+    .veritas{height: auto;}
+    .pro-skills{margin-top: 450px;}
+}
+
+/*ANIMATIONS*/
+/*Hero intro ------------------------------------------------------------------------------------------*/
+.hero-content h1{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid transparent; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+     /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+    animation: typing 2.5s steps(80, end),blink-caret .48s step-end 6;
+}  
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+} 
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: white }
+    50% { border-color: transparent;}
+}
+.hero-content h3{
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+     /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .10em; /* Adjust as needed */
+    visibility: hidden;
+    animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation: typingH3 3s steps(80, end) 3s forwards,blink-caret .70s step-end infinite;
+}  
+/* The typing effect */
+@keyframes typingH3 {
+    from { width: 0;}
+    to { width: 100%; visibility: visible;}
+} 
+/* The typewriter cursor effect */
+@keyframes blink-caretH3 {
+    from, to { border-color: transparent }
+    50% { border-color: lightgrey;}
+}
+/*Hero intro ------------------------------------------------------------------------------------------*/
